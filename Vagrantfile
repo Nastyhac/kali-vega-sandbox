@@ -956,7 +956,7 @@ Vagrant.configure("2") do |config|
           kalicluster.vm.provider "virtualbox" do |vb|
               vb.name = "vg-rhel-01"
               vb.memory = "768"
-              vb.gui = false
+              vb.gui = true
           end
           # kalicluster.vm.provision "shell",    inline: "hostnamectl set-hostname vg-kali-05"
           # kalicluster.vm.provision "shell", inline: $freebsd_docker_script
